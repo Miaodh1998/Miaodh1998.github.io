@@ -89,6 +89,12 @@ export default function Research() {
         <h3 className="mb-4 text-base font-semibold text-[#14201a]">学术会议</h3>
         <div className="space-y-3 text-sm leading-7 text-[#3a4a40]">
           <p>
+            <AccentBadge>2026</AccentBadge> 第十二届"钙钛矿材料与器件青年学者论坛"，山东青岛。
+          </p>
+          <p>
+            <AccentBadge>2026</AccentBadge> 第十九届国际太阳能光伏与智慧能源大会（SNEC），上海。
+          </p>
+          <p>
             <AccentBadge>2025</AccentBadge> 第十八届国际太阳能光伏与智慧能源大会（SNEC），上海。
           </p>
           <p>
