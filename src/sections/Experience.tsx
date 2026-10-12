@@ -1,10 +1,14 @@
 import { SectionHeading, AccentBadge, Badge } from './Shared'
+import imgGroup from '@/assets/group.jpg'
+import imgPhd from '@/assets/phd.jpg'
+import imgBachelor from '@/assets/bachelor.jpg'
 
 type Entry = {
   period: string
   org: string
   role: string
   points: string[]
+  img?: string
   badges?: { text: string; accent?: boolean }[]
 }
 
@@ -18,6 +22,7 @@ const entries: Entry[] = [
       '作为课题组核心成员参与国家光伏科学与技术重点实验室大型真空镀膜系统（磁控溅射、原子层沉积、气相沉积等）的安装、调试、运行与维护。',
       '作为实验室安全员，系统性排查实验室安全风险，建立二级单位实验室安全分级系统',
     ],
+    img: imgGroup,
     badges: [{ text: '参与国家重点研发计划项目', accent: true }, { text: '第80批面上资助申报', accent: true }],
   },
   {
@@ -29,6 +34,7 @@ const entries: Entry[] = [
       '参与国家重点研发计划项目（No. 22075182）与 Shell-CAS 前沿科学项目（No. PT78963）。',
       '2021.09 - 2021.12 担任《实验室安全与科研诚信》课程教学助理',
     ],
+    img: imgPhd,
     badges: [
       { text: '研究生学业奖学金 ×5', accent: true },
       { text: '上科大创新创业大赛一等奖 (2021)', accent: true },
@@ -55,6 +61,7 @@ const entries: Entry[] = [
       '参与全国大学生创新创业项目 1 项（省级立项，优秀结题）。',
       '南科大书友会协会会长，树仁书院 1626 班心理委员，校级足球比赛冠军 ×3',
     ],
+    img: imgBachelor,
     badges: [{ text: '新生奖学金' }, { text: '足球校赛冠军 ×3' }],
   },
 ]
@@ -78,6 +85,13 @@ export default function Experience() {
                 </li>
               ))}
             </ul>
+            {e.img && (
+              <img
+                src={e.img}
+                alt=""
+                className="mx-auto mt-5 aspect-[3/2] w-[88%] max-w-[400px] rounded-xl border border-[#e3e6e0] object-cover shadow-sm"
+              />
+            )}
             {e.badges && (
               <div className="mt-3 flex flex-wrap gap-2">
                 {e.badges.map((b) =>
