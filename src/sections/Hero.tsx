@@ -50,13 +50,20 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[#4a5a50]">
-        <a href="mailto:miaodh@fudan.edu.cn" className="underline decoration-[#c8d2c5] underline-offset-4 hover:text-[#1d5c38]">
-          miaodh@fudan.edu.cn
-        </a>
-        <span>(+86) 150-2671-7860</span>
-        <span>web: miaodh1998.github.io</span>
-        <span>微信公众号: MH的情诗</span>
+      <div className="mt-8 text-center text-sm text-[#4a5a50]">
+        <p>
+          email:{' '}
+          <a href="mailto:miaodh@fudan.edu.cn" className="underline decoration-[#c8d2c5] underline-offset-4 hover:text-[#1d5c38]">
+            miaodh@fudan.edu.cn
+          </a>
+          <span className="mx-3 text-[#c8d2c5]">·</span>
+          tel/wechat: (+86)150-2671-7860
+        </p>
+        <p className="mt-1.5">
+          web: miaodh1998.github.io
+          <span className="mx-3 text-[#c8d2c5]">·</span>
+          微信公众号: MH的情诗
+        </p>
       </div>
     </section>
   )
