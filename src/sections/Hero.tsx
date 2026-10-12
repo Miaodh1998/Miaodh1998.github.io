@@ -3,7 +3,7 @@ import photo from '@/assets/photo.jpg'
 export default function Hero() {
   return (
     <section id="top" className="py-20 sm:py-28">
-      <div className="flex flex-col-reverse gap-10 sm:flex-row sm:items-start sm:gap-12">
+      <div className="flex flex-col-reverse gap-10 sm:flex-row sm:items-stretch sm:gap-12">
         <div className="min-w-0 flex-1">
           <p className="mb-4 font-mono text-xs tracking-widest text-[#6b7a70]">
             Resume · Updated 2026-10
@@ -23,11 +23,11 @@ export default function Hero() {
             以及合作制备面积达 200 cm² 以上、认证效率 29% 的大面积叠层组件，均达到国际领先水平。
           </p>
         </div>
-        <figure className="shrink-0">
+        <figure className="flex shrink-0 flex-col">
           <img
             src={photo}
             alt="缪东昊"
-            className="h-64 w-52 rounded-2xl border border-[#e3e6e0] object-cover shadow-sm sm:h-80 sm:w-64"
+            className="h-64 w-52 rounded-2xl border border-[#e3e6e0] object-cover shadow-sm sm:h-auto sm:min-h-0 sm:flex-1 sm:w-64"
             style={{ objectPosition: '28% 55%' }}
           />
           <figcaption className="mt-2 text-center text-xs text-[#6b7a70]">
