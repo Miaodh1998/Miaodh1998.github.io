@@ -10,12 +10,12 @@ const papers = [
     tags: [{ text: '共同一作', accent: true }, { text: 'IF 9.8' }],
   },
   {
-    cite: 'Shi, Y.; Zhu, Z.; Miao, D.; Ding, Y.; Mi, Q. Interfacial Dipoles Boost Open-Circuit Voltage of Tin Halide Perovskite Solar Cells. ACS Energy Lett. 2024, 9 (4), 1895–1897.',
-    tags: [{ text: 'IF 19.8' }, { text: '一区 TOP' }],
-  },
-  {
     cite: 'Advanced Materials 2026, 38, e73106（钙钛矿-晶硅叠层方向，共同作者）.',
     tags: [{ text: 'IF 29.1' }, { text: '一区 TOP' }],
+  },
+  {
+    cite: 'Shi, Y.; Zhu, Z.; Miao, D.; Ding, Y.; Mi, Q. Interfacial Dipoles Boost Open-Circuit Voltage of Tin Halide Perovskite Solar Cells. ACS Energy Lett. 2024, 9 (4), 1895–1897.',
+    tags: [{ text: 'IF 19.8' }, { text: '一区 TOP' }],
   },
   {
     cite: 'Nat. Commun. 2021, 12, 3548（钙钛矿单晶材料方向，共同作者）.',

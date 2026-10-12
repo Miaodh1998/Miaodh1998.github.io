@@ -89,12 +89,12 @@ export default function Research() {
         <h3 className="mb-4 text-base font-semibold text-[#14201a]">学术会议</h3>
         <div className="space-y-3 text-sm leading-7 text-[#3a4a40]">
           <p>
+            <AccentBadge>2025</AccentBadge> 第十八届国际太阳能光伏与智慧能源大会（SNEC），上海。
+          </p>
+          <p>
             <AccentBadge>2024 · Poster</AccentBadge>{' '}
             Materials Research Society Fall Meeting, Boston, USA — Congruent and Oriented Crystallization of Mixed
             Sn–Pb Perovskite from the Nano- to Centimeter Scale.
-          </p>
-          <p>
-            <AccentBadge>2025</AccentBadge> 第十八届国际太阳能光伏与智慧能源大会（SNEC），上海。
           </p>
           <p>
             <AccentBadge>2021 · Presentation</AccentBadge> The 3rd Innovation &amp; Entrepreneurship Summit of
