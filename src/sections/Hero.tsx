@@ -17,7 +17,7 @@ export default function Hero() {
           </p>
 
           <p className="mt-8 max-w-2xl leading-8 text-[#3a4a40]">
-            博士毕业于上海科技大学材料科学与工程专业，现为复旦大学光电研究院博士后。
+            学士毕业于南方科技大学，博士毕业于上海科技大学，现为复旦大学光电研究院博士后。
             长期从事半导体钙钛矿材料与光伏器件研究，覆盖从材料合成、单晶生长、真空薄膜工艺到器件制备与表征的完整技术链条。
             代表性成果包括认证效率 34% 的钙钛矿-晶硅叠层电池、22.7% 的 1 cm² 半透明宽带隙单结电池，锡基钙钛矿16%认证效率（世界纪录），
             以及合作制备面积达 200 cm² 以上、认证效率 29% 的大面积叠层组件，均达到国际领先水平。
@@ -38,10 +38,10 @@ export default function Hero() {
 
       <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
         {[
-          { num: '34%', label: '钙硅叠层认证效率' },
-          { num: '29%', label: '>200 cm² 组件认证效率' },
-          { num: '8 篇', label: '发表 / 在投论文' },
-          { num: '3 项', label: '发明专利' },
+          { num: '34%', label: '钙钛矿-晶硅叠层认证效率' },
+          { num: '22.7%', label: '1 cm² 半透明宽带隙电池认证效率' },
+          { num: '16%', label: '锡基钙钛矿电池世界纪录' },
+          { num: '8篇', label: '发表/在投论文' },
         ].map((s) => (
           <div key={s.label} className="rounded-xl border border-[#e3e6e0] bg-white p-4">
             <p className="text-2xl font-bold text-[#1d5c38]">{s.num}</p>
@@ -55,7 +55,8 @@ export default function Hero() {
           miaodh@fudan.edu.cn
         </a>
         <span>(+86) 150-2671-7860</span>
-        <span>籍贯：河南商丘</span>
+        <span>web: miaodh1998.github.io</span>
+        <span>微信公众号: MH的情诗</span>
       </div>
     </section>
   )
