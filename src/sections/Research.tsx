@@ -1,4 +1,9 @@
 import { SectionHeading, AccentBadge } from './Shared'
+import img165 from '@/assets/1.65.png'
+import img3T from '@/assets/3T.png'
+import imgFPEABr from '@/assets/FPEABr.png'
+import imgPMMA from '@/assets/PMMA.png'
+import imgSC from '@/assets/SC.png'
 
 const projects = [
   {
@@ -9,6 +14,7 @@ const projects = [
       '新型叠层电池研发：设计开发多种新型纯碘宽带隙钙钛矿材料，创新性采用绿色反溶剂制备工艺，从根本上解决碘溴分相问题。',
       '高效稳定大面积钙硅叠层：协同复旦大学、香港大学、天合光能合作国家重点研发计划项目，开发适配空天光伏的大面积组件。',
     ],
+    img: img165,
     metrics: [
       { num: '22.7%', label: '1 cm² 半透明单结（中科院微系统所认证）' },
       { num: '34%', label: '钙钛矿-晶硅叠层（中科院微系统所认证）' },
@@ -22,6 +28,7 @@ const projects = [
     body: [
       '通过对锡铅混合器件及宽带隙上下界面的综合调控，系统性提升锡铅混合钙钛矿和宽带隙碘溴钙钛矿的抗氧化能力与器件效率，达国际领先水平。',
     ],
+    img: img3T,
     metrics: [
       { num: '23%', label: '锡铅混合钙钛矿认证效率' },
       { num: '29%', label: '全钙钛矿叠层认证效率' },
@@ -33,6 +40,7 @@ const projects = [
     body: [
       '通过添加剂工程和界面工程，创新性引入界面偶极层实现能级对齐，对上下传输层界面掺杂优化，系统性提升锡基钙钛矿薄膜结晶质量与器件效率，达当时国际第一水平。',
     ],
+    imgPair: [imgFPEABr, imgPMMA],
     metrics: [
       { num: '16%', label: '小面积认证效率（中科院微系统所）' },
       { num: '15%', label: '1 cm² 器件认证效率（无锡国家光伏质检中心）' },
@@ -44,6 +52,7 @@ const projects = [
     body: [
       '使用自制密封玻璃/石英管真空封管合成高质量材料（SnI₂、PbI₂ 及掺杂半导体），通过化学合成制备钙钛矿原材料与空穴传输层材料（FAI、NiOx 等），以区域熔融法提纯、布里奇曼法生长 SnPbI₄、CsPbBr₃ 等单晶。',
     ],
+    img: imgSC,
     metrics: [{ num: '一等奖', label: '2021 上海科技大学创新创意大赛' }],
   },
   {
@@ -73,6 +82,16 @@ export default function Research() {
                 </li>
               ))}
             </ul>
+            {'img' in p && p.img && (
+              <img src={p.img} alt="" className="mx-auto mt-5 w-[300px] max-w-full" />
+            )}
+            {'imgPair' in p && p.imgPair && (
+              <div className="mt-5 flex items-center justify-center gap-6">
+                {p.imgPair.map((src) => (
+                  <img key={src} src={src} alt="" className="h-[110px] w-auto" />
+                ))}
+              </div>
+            )}
             <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {p.metrics.map((m) => (
                 <div key={m.label} className="rounded-lg bg-[#f2f5ef] p-3">
