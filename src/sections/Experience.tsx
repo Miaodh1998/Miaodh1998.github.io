@@ -89,7 +89,7 @@ export default function Experience() {
               <img
                 src={e.img}
                 alt=""
-                className="mx-auto mt-5 aspect-[3/2] w-[60%] max-w-[267px] rounded-xl border border-[#e3e6e0] object-cover shadow-sm"
+                className="mx-auto mt-5 aspect-[3/2] w-[68%] max-w-[300px] rounded-xl border border-[#e3e6e0] object-cover shadow-sm"
               />
             )}
             {e.badges && (
