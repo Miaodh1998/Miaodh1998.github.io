@@ -40,8 +40,7 @@ export default function Publications() {
     <section id="publications" className="scroll-mt-20 py-14">
       <SectionHeading index="04" label="Publications" title="论文与专利" />
       <p className="mb-8 text-sm leading-7 text-[#3a4a40]">
-        累积发表 / 在投论文 8 篇，引用量 324 次。其中半导体光电子材料与器件领域 TOP 期刊 7 篇（一作 3 篇 / 共同通讯 1
-        篇，含 Nature 大子刊 1 篇），发明专利 3 项。
+        累积发表 / 在投论文 8 篇，引用量 224 次。
       </p>
 
       <h3 className="mb-4 text-base font-semibold text-[#14201a]">代表性论文</h3>

@@ -15,7 +15,7 @@ export default function FooterEn() {
           <p>Affiliation: Institute of Optoelectronics, Fudan University</p>
         </div>
         <p className="mt-10 text-xs text-[#9aa89e]">
-          © 2026 Donghao Miao · Built with React &amp; GitHub Pages
+          © 2026 Miao Donghao · Built with React &amp; GitHub Pages
         </p>
       </div>
     </footer>

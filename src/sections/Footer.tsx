@@ -15,7 +15,7 @@ export default function Footer() {
           <p>单位：复旦大学 光电研究院</p>
         </div>
         <p className="mt-10 text-xs text-[#9aa89e]">
-          © 2026 缪东昊 Donghao Miao · Built with React &amp; GitHub Pages
+          © 2026 缪东昊 Miao Donghao · Built with React &amp; GitHub Pages
         </p>
       </div>
     </footer>

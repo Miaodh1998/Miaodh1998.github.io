@@ -29,11 +29,11 @@ export default function Nav({ lang, onToggle }: Props) {
         <a href="#top" className="text-sm font-bold tracking-wide text-[#14201a]">
           {lang === 'zh' ? (
             <>
-              缪东昊 <span className="ml-1 font-normal text-[#6b7a70]">Donghao Miao</span>
+              缪东昊 <span className="ml-1 font-normal text-[#6b7a70]">Miao Donghao</span>
             </>
           ) : (
             <>
-              Donghao Miao <span className="ml-1 font-normal text-[#6b7a70]">缪东昊</span>
+              Miao Donghao <span className="ml-1 font-normal text-[#6b7a70]">缪东昊</span>
             </>
           )}
         </a>

@@ -40,9 +40,7 @@ export default function PublicationsEn() {
     <section id="publications" className="scroll-mt-20 py-14">
       <SectionHeading index="04" label="Publications" title="Publications & Patents" />
       <p className="mb-8 text-sm leading-7 text-[#3a4a40]">
-        8 papers published or under review with 324 citations, including 7 in top journals of semiconductor
-        optoelectronic materials and devices (3 as first author, 1 as co-corresponding author, including one Nature
-        sister journal), and 3 invention patents.
+        8 papers published or under review with 224 citations.
       </p>
 
       <h3 className="mb-4 text-base font-semibold text-[#14201a]">Selected Papers</h3>

@@ -25,7 +25,7 @@ export default function Home() {
   useEffect(() => {
     localStorage.setItem('lang', lang)
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en'
-    document.title = lang === 'zh' ? '缪东昊 · 个人学术主页' : 'Donghao Miao · Academic Homepage'
+    document.title = lang === 'zh' ? '缪东昊 · 个人学术主页' : 'Miao Donghao · Academic Homepage'
   }, [lang])
 
   const toggle = () => setLang((l) => (l === 'zh' ? 'en' : 'zh'))
