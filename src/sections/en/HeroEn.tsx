@@ -3,13 +3,13 @@ import photo from '@/assets/photo.jpg'
 export default function HeroEn() {
   return (
     <section id="top" className="py-20 sm:py-28">
-      <div className="flex flex-col-reverse gap-10 sm:flex-row sm:items-stretch sm:gap-12">
+      <div className="flex flex-col-reverse gap-10 sm:flex-row sm:items-start sm:gap-12">
         <div className="min-w-0 flex-1">
           <p className="mb-4 font-mono text-xs tracking-widest text-[#6b7a70]">
             Resume · Updated 2026-10
           </p>
-          <h1 className="text-5xl font-bold tracking-tight text-[#14201a] sm:text-6xl">Mio</h1>
-          <p className="mt-2 text-xl font-medium tracking-tight text-[#4a5a50]">Miao Donghao</p>
+          <h1 className="text-4xl font-bold tracking-tight text-[#14201a] sm:text-5xl">Mio</h1>
+          <p className="mt-2 text-base font-medium tracking-tight text-[#4a5a50]">Miao Donghao</p>
           <p className="mt-4 text-xl font-medium text-[#2a3a30]">
             Postdoctoral Researcher · Institute of Optoelectronics, Fudan University
           </p>
@@ -17,19 +17,18 @@ export default function HeroEn() {
             Perovskite photovoltaics · Tandem solar cells · Semiconductor materials & devices
           </p>
 
-          <p className="mt-8 max-w-2xl text-[15px] leading-7 text-[#3a4a40]">
-            I am a postdoctoral researcher at the Institute of Optoelectronics, Fudan University. I received my
-            B.Sc. from SUSTech and my Ph.D. from ShanghaiTech University. My research spans perovskite materials
-            and photovoltaic devices, from materials synthesis and single-crystal growth to device fabrication.
-            Highlights include certified 34% perovskite–silicon tandem, 22.7% 1 cm² semi-transparent wide-bandgap,
-            and 16% tin-based perovskite (a world record at the time) cells.
+          <p className="mt-8 max-w-2xl text-sm leading-6 text-[#3a4a40]">
+            B.Sc. from SUSTech, Ph.D. from ShanghaiTech University. My research covers perovskite
+            materials and photovoltaic devices, from single-crystal growth to tandem solar cells.
+            Highlights: certified 34% perovskite–Si tandem, 22.7% 1 cm² semi-transparent
+            wide-bandgap, and record 16% Sn-based cells.
           </p>
         </div>
         <figure className="flex shrink-0 flex-col">
           <img
             src={photo}
             alt="Miao Donghao"
-            className="h-64 w-52 rounded-2xl border border-[#e3e6e0] object-cover shadow-sm sm:h-auto sm:min-h-0 sm:flex-1 sm:w-64"
+            className="h-64 w-52 rounded-2xl border border-[#e3e6e0] object-cover shadow-sm sm:h-80 sm:w-64"
             style={{ objectPosition: '28% 55%' }}
           />
           <figcaption className="mt-2 text-center text-xs text-[#6b7a70]">
