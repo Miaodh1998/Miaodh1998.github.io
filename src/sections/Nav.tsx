@@ -25,7 +25,7 @@ export default function Nav({ lang, onToggle }: Props) {
   const links = lang === 'zh' ? zhLinks : enLinks
   return (
     <header className="sticky top-0 z-50 border-b border-[#e3e6e0] bg-[#fafaf7]/90 backdrop-blur">
-      <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-3">
+      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
         <a href="#top" className="text-sm font-bold tracking-wide text-[#14201a]">
           {lang === 'zh' ? (
             <>

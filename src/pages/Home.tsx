@@ -35,7 +35,7 @@ export default function Home() {
       <Nav lang={lang} onToggle={toggle} />
       {lang === 'zh' ? (
         <>
-          <main className="mx-auto max-w-3xl px-6">
+          <main className="mx-auto max-w-5xl px-6">
             <Hero />
             <Focus />
             <Experience />
@@ -47,7 +47,7 @@ export default function Home() {
         </>
       ) : (
         <>
-          <main className="mx-auto max-w-3xl px-6">
+          <main className="mx-auto max-w-5xl px-6">
             <HeroEn />
             <FocusEn />
             <ExperienceEn />
