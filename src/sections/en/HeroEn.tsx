@@ -17,11 +17,12 @@ export default function HeroEn() {
             Perovskite photovoltaics · Tandem solar cells · Semiconductor materials & devices
           </p>
 
-          <p className="mt-8 max-w-2xl text-sm leading-6 text-[#3a4a40]">
-            B.Sc. from SUSTech, Ph.D. from ShanghaiTech University. My research covers perovskite
-            materials and photovoltaic devices, from single-crystal growth to tandem solar cells.
-            Highlights: certified 34% perovskite–Si tandem, 22.7% 1 cm² semi-transparent
-            wide-bandgap, and record 16% Sn-based cells.
+          <p className="mt-8 max-w-2xl text-[15px] leading-7 text-[#3a4a40]">
+            I am a postdoctoral researcher at the Institute of Optoelectronics, Fudan University. I received my
+            B.Sc. from SUSTech and my Ph.D. from ShanghaiTech University. My research spans perovskite materials
+            and photovoltaic devices, from materials synthesis and single-crystal growth to device fabrication.
+            Highlights include certified 34% perovskite–silicon tandem, 22.7% 1 cm² semi-transparent wide-bandgap,
+            and 16% tin-based perovskite (a world record at the time) cells.
           </p>
         </div>
         <figure className="flex shrink-0 flex-col">
