@@ -29,12 +29,12 @@ export default function HeroEn() {
         <figure className="flex shrink-0 flex-col">
           <img
             src={photo}
-            alt="Miao Donghao"
+            alt="Mio"
             className="h-64 w-52 rounded-2xl border border-[#e3e6e0] object-cover shadow-sm sm:h-auto sm:min-h-0 sm:flex-1 sm:w-64"
             style={{ objectPosition: '28% 55%' }}
           />
           <figcaption className="mt-2 text-center text-xs text-[#6b7a70]">
-            Miao Donghao · Aug 2026 · Danxia Landform, China
+            Mio · Aug 2026 · Danxia Landform, China
           </figcaption>
         </figure>
       </div>
