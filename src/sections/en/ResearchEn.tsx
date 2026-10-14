@@ -107,12 +107,12 @@ export default function ResearchEn() {
               ))}
             </ul>
             {'img' in p && p.img && (
-              <img src={p.img} alt="" className="mx-auto mt-5 w-[300px] max-w-full" />
+              <img src={p.img} alt="" className="mx-auto mt-5 w-[400px] max-w-full" />
             )}
             {'imgPair' in p && p.imgPair && (
               <div className="mt-5 flex items-center justify-center gap-6">
                 {p.imgPair.map((src) => (
-                  <img key={src} src={src} alt="" className="h-[110px] w-auto" />
+                  <img key={src} src={src} alt="" className="h-[146px] w-auto" />
                 ))}
               </div>
             )}

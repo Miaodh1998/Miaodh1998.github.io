@@ -1,6 +1,4 @@
 import photo from '@/assets/photo.jpg'
-import qrWechat from '@/assets/qr-wechat.png'
-import qrMp from '@/assets/qr-mp.jpg'
 
 export default function HeroEn() {
   return (
@@ -53,28 +51,16 @@ export default function HeroEn() {
         ))}
       </div>
 
-      <div className="mt-8 flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
-        <div className="grid flex-1 grid-cols-1 gap-y-1.5 text-center text-sm text-[#4a5a50] sm:grid-cols-2">
-          <p>
-            email:{' '}
-            <a href="mailto:miaodh@fudan.edu.cn" className="underline decoration-[#c8d2c5] underline-offset-4 hover:text-[#1d5c38]">
-              miaodh@fudan.edu.cn
-            </a>
-          </p>
-          <p>tel/wechat: (+86)150-2671-7860</p>
-          <p>web: miaodh.site</p>
-          <p>WeChat official account: MH的情诗</p>
-        </div>
-        <div className="flex shrink-0 items-center gap-6">
-          <figure className="flex flex-col items-center">
-            <img src={qrWechat} alt="Personal WeChat QR code" className="h-20 w-20 rounded-lg border border-[#e3e6e0] object-cover" />
-            <figcaption className="mt-1.5 text-xs text-[#6b7a70]">个人微信</figcaption>
-          </figure>
-          <figure className="flex flex-col items-center">
-            <img src={qrMp} alt="WeChat official account QR code" className="h-20 w-20 rounded-lg border border-[#e3e6e0] object-cover" />
-            <figcaption className="mt-1.5 text-xs text-[#6b7a70]">公众号</figcaption>
-          </figure>
-        </div>
+      <div className="mt-8 grid grid-cols-1 gap-y-1.5 text-center text-sm text-[#4a5a50] sm:grid-cols-2">
+        <p>
+          email:{' '}
+          <a href="mailto:miaodh@fudan.edu.cn" className="underline decoration-[#c8d2c5] underline-offset-4 hover:text-[#1d5c38]">
+            miaodh@fudan.edu.cn
+          </a>
+        </p>
+        <p>tel/wechat: (+86)150-2671-7860</p>
+        <p>web: miaodh.site</p>
+        <p>WeChat official account: MH的情诗</p>
       </div>
     </section>
   )
