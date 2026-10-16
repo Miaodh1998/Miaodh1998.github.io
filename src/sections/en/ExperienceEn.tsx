@@ -24,7 +24,7 @@ const entries: Entry[] = [
       'Laboratory safety officer: systematic risk inspection and a tiered laboratory-safety system established for the secondary unit',
       'Led a four-person team as a subgroup leader, delivering the overall project targets',
     ],
-    learn: 'University–industry teamwork · Small-team leadership · Project-driven · Multi-party communication',
+    learn: 'University–industry teamwork · Small-team leadership · Project-driven · Multi-party communication · AI empowerment',
     img: imgGroup,
     badges: [
       { text: 'National Key R&D Program participant', accent: true },
@@ -40,7 +40,7 @@ const entries: Entry[] = [
       'Participated in a State Key Research Project of the Ministry of Science and Technology (No. 22075182) and the Shell–CAS Frontier Sciences Program (No. PT78963).',
       'Teaching assistant for Laboratory Safety and Research Integrity (2021.09 - 2021.12)',
     ],
-    learn: 'Spotting ideas · Scientific spirit · Multi-instrument development',
+    learn: 'Spotting ideas · Scientific spirit · Multi-instrument development · Big-data analysis',
     img: imgPhd,
     badges: [
       { text: 'Graduate Academic Scholarship ×5', accent: true },
@@ -52,14 +52,14 @@ const entries: Entry[] = [
     org: 'SUSTech · Center for Social Sciences',
     role: 'Research Assistant',
     points: ['Artifact archiving, pottery shard cataloging and dating, digital registration, and exhibition support'],
-    learn: 'Order & organization · Exploring history · A sound view of history',
+    learn: 'Order & organization · Exploring history · Forming a view of history',
   },
   {
     period: '2019.07 - 2019.09',
     org: 'BTR New Material Group · Analysis & Testing Center',
     role: 'Intern Engineer',
     points: ['Performance analysis of cathode/anode materials, SEM imaging, and data curation'],
-    learn: 'First taste of industry · Precision instruments · Strict SOP compliance',
+    learn: 'First taste of industry · Precision instruments · Follow every rule, and follow it strictly',
   },
   {
     period: '2016.09 - 2020.07',
