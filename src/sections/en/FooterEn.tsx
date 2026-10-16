@@ -5,7 +5,7 @@ export default function FooterEn() {
   return (
     <footer id="contact" className="mt-10 border-t border-[#e3e6e0] bg-white">
       <div className="mx-auto max-w-5xl px-6 py-14">
-        <p className="mb-2 font-mono text-xs tracking-widest text-[#6b7a70]">06 / Contact</p>
+        <p className="mb-2 font-mono text-xs tracking-widest text-[#6b7a70]">07 / Contact</p>
         <h2 className="text-2xl font-bold text-[#14201a]">Contact</h2>
         <div className="mt-6 flex flex-col items-center justify-center gap-8 text-center sm:flex-row sm:gap-14">
           <div className="space-y-2 text-sm text-[#3a4a40]">

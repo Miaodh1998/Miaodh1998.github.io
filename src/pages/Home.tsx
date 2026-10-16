@@ -5,6 +5,7 @@ import Experience from '@/sections/Experience'
 import Research from '@/sections/Research'
 import Publications from '@/sections/Publications'
 import Skills from '@/sections/Skills'
+import Hobbies from '@/sections/Hobbies'
 import Footer from '@/sections/Footer'
 import Nav from '@/sections/Nav'
 import HeroEn from '@/sections/en/HeroEn'
@@ -13,6 +14,7 @@ import ExperienceEn from '@/sections/en/ExperienceEn'
 import ResearchEn from '@/sections/en/ResearchEn'
 import PublicationsEn from '@/sections/en/PublicationsEn'
 import SkillsEn from '@/sections/en/SkillsEn'
+import HobbiesEn from '@/sections/en/HobbiesEn'
 import FooterEn from '@/sections/en/FooterEn'
 
 type Lang = 'zh' | 'en'
@@ -42,6 +44,7 @@ export default function Home() {
             <Research />
             <Publications />
             <Skills />
+            <Hobbies />
           </main>
           <Footer />
         </>
@@ -54,6 +57,7 @@ export default function Home() {
             <ResearchEn />
             <PublicationsEn />
             <SkillsEn />
+            <HobbiesEn />
           </main>
           <FooterEn />
         </>

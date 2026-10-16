@@ -9,6 +9,7 @@ const zhLinks = [
   { href: '#research', label: '研究项目' },
   { href: '#publications', label: '论文专利' },
   { href: '#skills', label: '技能' },
+  { href: '#hobbies', label: '爱好' },
   { href: '#contact', label: '联系' },
 ]
 
@@ -18,6 +19,7 @@ const enLinks = [
   { href: '#research', label: 'Research' },
   { href: '#publications', label: 'Publications' },
   { href: '#skills', label: 'Skills' },
+  { href: '#hobbies', label: 'Hobbies' },
   { href: '#contact', label: 'Contact' },
 ]
 
