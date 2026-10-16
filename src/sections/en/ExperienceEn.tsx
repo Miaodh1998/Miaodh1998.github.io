@@ -8,6 +8,7 @@ type Entry = {
   org: string
   role: string
   points: string[]
+  learn?: string
   img?: string
   badges?: { text: string; accent?: boolean }[]
 }
@@ -22,6 +23,7 @@ const entries: Entry[] = [
       'Core member of the group at the State Key Laboratory of Photovoltaic Science and Technology: installation, commissioning, operation, and maintenance of large vacuum coating systems (magnetron sputtering, ALD, and vapor deposition).',
       'Laboratory safety officer: systematic risk inspection and a tiered laboratory-safety system established for the secondary unit',
     ],
+    learn: 'From making a good device to explaining the mechanism behind it — independent research design, engineering scale-up thinking, and leading small teams on systematic problems.',
     img: imgGroup,
     badges: [
       { text: 'National Key R&D Program participant', accent: true },
@@ -37,6 +39,7 @@ const entries: Entry[] = [
       'Participated in a State Key Research Project of the Ministry of Science and Technology (No. 22075182) and the Shell–CAS Frontier Sciences Program (No. PT78963).',
       'Teaching assistant for Laboratory Safety and Research Integrity (2021.09 - 2021.12)',
     ],
+    learn: 'Turning a vague idea into a testable scientific question — and iterating through countless failures.',
     img: imgPhd,
     badges: [
       { text: 'Graduate Academic Scholarship ×5', accent: true },
@@ -48,12 +51,14 @@ const entries: Entry[] = [
     org: 'SUSTech · Center for Social Sciences',
     role: 'Research Assistant',
     points: ['Artifact archiving, pottery shard cataloging and dating, digital registration, and exhibition support'],
+    learn: 'Order, documentation, and patience — rigor training beyond science.',
   },
   {
     period: '2019.07 - 2019.09',
     org: 'BTR New Material Group · Analysis & Testing Center',
     role: 'Intern Engineer',
     points: ['Performance analysis of cathode/anode materials, SEM imaging, and data curation'],
+    learn: "The industry's strict standards for quality and reproducibility.",
   },
   {
     period: '2016.09 - 2020.07',
@@ -64,6 +69,7 @@ const entries: Entry[] = [
       'Completed a National Undergraduate Innovation & Entrepreneurship project (provincial funding, concluded with excellence).',
       'President of the SUSTech Book Club; peer counselor of Class 1626, Shuren College; 3× university football champion',
     ],
+    learn: 'The beginning of scientific thinking — learning how to learn, and how to work with people.',
     img: imgBachelor,
     badges: [{ text: 'Freshman Scholarship' }, { text: '3× Football Champion' }],
   },
@@ -94,6 +100,12 @@ export default function ExperienceEn() {
                 alt=""
                 className="mx-auto mt-5 aspect-[3/2] w-2/3 max-w-[300px] rounded-xl border border-[#e3e6e0] object-cover shadow-sm"
               />
+            )}
+            {e.learn && (
+              <p className="mt-4 text-sm leading-7 text-[#3a4a40]">
+                <span className="font-semibold text-[#1d5c38]">What I learned: </span>
+                {e.learn}
+              </p>
             )}
             {e.badges && (
               <div className="mt-3 flex flex-wrap gap-2">

@@ -8,6 +8,7 @@ type Entry = {
   org: string
   role: string
   points: string[]
+  learn?: string
   img?: string
   badges?: { text: string; accent?: boolean }[]
 }
@@ -22,6 +23,7 @@ const entries: Entry[] = [
       '作为课题组核心成员参与国家光伏科学与技术重点实验室大型真空镀膜系统（磁控溅射、原子层沉积、气相沉积等）的安装、调试、运行与维护。',
       '作为实验室安全员，系统性排查实验室安全风险，建立二级单位实验室安全分级系统',
     ],
+    learn: '从"做出一个好器件"到"讲清背后的机制"：独立选题、工程化放大思维，以及带领小团队解决系统性问题的能力。',
     img: imgGroup,
     badges: [{ text: '参与国家重点研发计划项目', accent: true }, { text: '第80批面上资助申报', accent: true }],
   },
@@ -34,6 +36,7 @@ const entries: Entry[] = [
       '参与国家重点研发计划项目（No. 22075182）与 Shell-CAS 前沿科学项目（No. PT78963）。',
       '2021.09 - 2021.12 担任《实验室安全与科研诚信》课程教学助理',
     ],
+    learn: '如何把一个模糊的想法变成可验证的科学问题，并在无数次失败中保持迭代。',
     img: imgPhd,
     badges: [
       { text: '研究生学业奖学金 ×5', accent: true },
@@ -45,12 +48,14 @@ const entries: Entry[] = [
     org: '南方科技大学 · 人文社科中心',
     role: '科研助理',
     points: ['文物收纳整理、陶片分档回溯、电子登记信息、协助开设展览'],
+    learn: '秩序、归档与耐心——科学之外的严谨训练。',
   },
   {
     period: '2019.07 - 2019.09',
     org: '贝特瑞新材料集团 · 分析测试中心',
     role: '实习工程师',
     points: ['正负极材料性能分析、SEM 观测材料形貌、数据整理归纳'],
+    learn: '工业界对"标准"与"可重复性"的严格要求。',
   },
   {
     period: '2016.09 - 2020.07',
@@ -61,6 +66,7 @@ const entries: Entry[] = [
       '参与全国大学生创新创业项目 1 项（省级立项，优秀结题）。',
       '南科大书友会协会会长，树仁书院 1626 班心理委员，校级足球比赛冠军 ×3',
     ],
+    learn: '科学思维的启蒙：学会自学，也学会与人协作。',
     img: imgBachelor,
     badges: [{ text: '新生奖学金' }, { text: '足球校赛冠军 ×3' }],
   },
@@ -91,6 +97,12 @@ export default function Experience() {
                 alt=""
                 className="mx-auto mt-5 aspect-[3/2] w-[68%] max-w-[300px] rounded-xl border border-[#e3e6e0] object-cover shadow-sm"
               />
+            )}
+            {e.learn && (
+              <p className="mt-4 text-sm leading-7 text-[#3a4a40]">
+                <span className="font-semibold text-[#1d5c38]">我学到的：</span>
+                {e.learn}
+              </p>
             )}
             {e.badges && (
               <div className="mt-3 flex flex-wrap gap-2">
