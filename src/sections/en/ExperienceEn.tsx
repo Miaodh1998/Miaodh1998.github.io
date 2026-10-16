@@ -68,11 +68,11 @@ const entries: Entry[] = [
     points: [
       'Research: metallic materials, nanomaterials preparation, and SEM characterization.',
       'Completed a National Undergraduate Innovation & Entrepreneurship project (provincial funding, concluded with excellence).',
-      'Member of the Calligraphy & Painting Club, Skateboarding Club, and Shuren Football Team',
+      'Member of the Calligraphy & Painting Club, Skateboarding Club, and Shuren Football Team; class peer counselor; 2× university football champion',
     ],
     learn: 'Innovation mindset · Dare to be first · All-round development · Work–life balance',
     img: imgBachelor,
-    badges: [{ text: 'Freshman Scholarship' }, { text: '3× Football Champion' }],
+    badges: [{ text: 'Freshman Scholarship' }, { text: '2× Football Champion' }],
   },
 ]
 
