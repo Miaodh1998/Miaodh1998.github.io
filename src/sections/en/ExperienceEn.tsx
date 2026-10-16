@@ -22,8 +22,9 @@ const entries: Entry[] = [
       'Research: photovoltaic semiconductors, perovskite–silicon tandem devices, novel semiconductor materials, and operational stability.',
       'Core member of the group at the State Key Laboratory of Photovoltaic Science and Technology: installation, commissioning, operation, and maintenance of large vacuum coating systems (magnetron sputtering, ALD, and vapor deposition).',
       'Laboratory safety officer: systematic risk inspection and a tiered laboratory-safety system established for the secondary unit',
+      'Led a four-person team as a subgroup leader, delivering the overall project targets',
     ],
-    learn: 'From making a good device to explaining the mechanism behind it — independent research design, engineering scale-up thinking, and leading small teams on systematic problems.',
+    learn: 'University–industry teamwork · Small-team leadership · Project-driven · Multi-party communication',
     img: imgGroup,
     badges: [
       { text: 'National Key R&D Program participant', accent: true },
@@ -39,7 +40,7 @@ const entries: Entry[] = [
       'Participated in a State Key Research Project of the Ministry of Science and Technology (No. 22075182) and the Shell–CAS Frontier Sciences Program (No. PT78963).',
       'Teaching assistant for Laboratory Safety and Research Integrity (2021.09 - 2021.12)',
     ],
-    learn: 'Turning a vague idea into a testable scientific question — and iterating through countless failures.',
+    learn: 'Spotting ideas · Scientific spirit · Multi-instrument development',
     img: imgPhd,
     badges: [
       { text: 'Graduate Academic Scholarship ×5', accent: true },
@@ -51,14 +52,14 @@ const entries: Entry[] = [
     org: 'SUSTech · Center for Social Sciences',
     role: 'Research Assistant',
     points: ['Artifact archiving, pottery shard cataloging and dating, digital registration, and exhibition support'],
-    learn: 'Order, documentation, and patience — rigor training beyond science.',
+    learn: 'Order & organization · Exploring history · A sound view of history',
   },
   {
     period: '2019.07 - 2019.09',
     org: 'BTR New Material Group · Analysis & Testing Center',
     role: 'Intern Engineer',
     points: ['Performance analysis of cathode/anode materials, SEM imaging, and data curation'],
-    learn: "The industry's strict standards for quality and reproducibility.",
+    learn: 'First taste of industry · Precision instruments · Strict SOP compliance',
   },
   {
     period: '2016.09 - 2020.07',
@@ -67,9 +68,9 @@ const entries: Entry[] = [
     points: [
       'Research: metallic materials, nanomaterials preparation, and SEM characterization.',
       'Completed a National Undergraduate Innovation & Entrepreneurship project (provincial funding, concluded with excellence).',
-      'President of the SUSTech Book Club; peer counselor of Class 1626, Shuren College; 3× university football champion',
+      'Member of the Calligraphy & Painting Club, Skateboarding Club, and Shuren Football Team',
     ],
-    learn: 'The beginning of scientific thinking — learning how to learn, and how to work with people.',
+    learn: 'Innovation mindset · Dare to be first · All-round development · Work–life balance',
     img: imgBachelor,
     badges: [{ text: 'Freshman Scholarship' }, { text: '3× Football Champion' }],
   },
