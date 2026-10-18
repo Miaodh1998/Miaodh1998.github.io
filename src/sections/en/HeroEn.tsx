@@ -1,4 +1,5 @@
 import photo from '@/assets/photo.jpg'
+import ColumnNav from '../ColumnNav'
 
 export default function HeroEn() {
   return (
@@ -53,6 +54,8 @@ export default function HeroEn() {
           </div>
         ))}
       </div>
+
+      <ColumnNav lang="en" />
 
       <div className="mt-8 grid grid-cols-1 gap-y-1.5 text-center text-sm text-[#4a5a50] sm:grid-cols-2">
         <p>

@@ -16,13 +16,28 @@ import PublicationsEn from '@/sections/en/PublicationsEn'
 import SkillsEn from '@/sections/en/SkillsEn'
 import HobbiesEn from '@/sections/en/HobbiesEn'
 import FooterEn from '@/sections/en/FooterEn'
+import Ability from '@/pages/Ability'
+import Timeline from '@/pages/Timeline'
+import Plan from '@/pages/Plan'
 
 type Lang = 'zh' | 'en'
+
+function useHash() {
+  const [hash, setHash] = useState(() => window.location.hash)
+  useEffect(() => {
+    const onChange = () => setHash(window.location.hash)
+    window.addEventListener('hashchange', onChange)
+    return () => window.removeEventListener('hashchange', onChange)
+  }, [])
+  return hash
+}
 
 export default function Home() {
   const [lang, setLang] = useState<Lang>(() =>
     typeof localStorage !== 'undefined' && localStorage.getItem('lang') === 'en' ? 'en' : 'zh',
   )
+  const hash = useHash()
+  const sub = hash.startsWith('#/') ? hash.slice(2) : null
 
   useEffect(() => {
     localStorage.setItem('lang', lang)
@@ -30,12 +45,28 @@ export default function Home() {
     document.title = lang === 'zh' ? '缪东昊 · 个人学术主页' : 'Miao Donghao · Academic Homepage'
   }, [lang])
 
+  useEffect(() => {
+    if (sub) {
+      window.scrollTo(0, 0)
+    } else if (hash && hash.length > 1) {
+      const el = document.getElementById(hash.slice(1))
+      if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 50)
+    }
+  }, [hash, sub])
+
   const toggle = () => setLang((l) => (l === 'zh' ? 'en' : 'zh'))
+
+  let subPage: React.ReactNode = null
+  if (sub === 'ability') subPage = <Ability lang={lang} />
+  else if (sub === 'timeline') subPage = <Timeline lang={lang} />
+  else if (sub === 'plan') subPage = <Plan lang={lang} />
 
   return (
     <div className="min-h-screen bg-[#fafaf7] text-[#1a1f1c] antialiased">
       <Nav lang={lang} onToggle={toggle} />
-      {lang === 'zh' ? (
+      {subPage ? (
+        <main className="mx-auto max-w-5xl px-6">{subPage}</main>
+      ) : lang === 'zh' ? (
         <>
           <main className="mx-auto max-w-5xl px-6">
             <Hero />
