@@ -54,10 +54,14 @@ const content = {
         from: 2016.67,
         to: 2020.5,
         events: [
-          { t: 2016.67, date: '2016.09', kind: 'milestone', text: '进入南方科技大学材料科学与工程系' },
+          { t: 2016.67, date: '2016.09', kind: 'milestone', text: '加入南方科技大学' },
           { t: 2016.8, date: '2016', kind: 'award', text: '新生奖学金' },
+          { t: 2018.92, date: '2018.12', kind: 'award', text: '南科大书院杯冠军' },
+          { t: 2019.33, date: '2019.05', kind: 'award', text: '南科大校长杯冠军' },
           { t: 2019.5, date: '2019.07', kind: 'milestone', text: '贝特瑞新材料集团分析测试中心实习：正负极材料分析与 SEM 形貌观测' },
-          { t: 2020.5, date: '2020.07', kind: 'milestone', text: '本科毕业；在南科大人文社科中心任科研助理，参与文物整理与展览' },
+          { t: 2019.92, date: '2019.12', kind: 'milestone', text: '大创项目省级立项：抗菌合金设计合成（负责人）' },
+          { t: 2020.4, date: '2020', kind: 'award', text: '南科大优秀毕业论文' },
+          { t: 2020.5, date: '2020.07', kind: 'milestone', text: '本科毕业；在南科大人文社科中心任科研助理，参与文物整理与“陶说”展览' },
         ],
       },
       {
@@ -71,12 +75,17 @@ const content = {
         to: 2025.5,
         events: [
           { t: 2020.67, date: '2020.09', kind: 'milestone', text: '保送上海科技大学，硕博连读' },
+          { t: 2020.9, date: '2020', kind: 'award', text: '研究生学业奖学金' },
           { t: 2021.4, date: '2021', kind: 'paper', text: 'Nat. Commun. 2021 · 钙钛矿单晶材料（共同作者）' },
-          { t: 2021.5, date: '2021', kind: 'award', text: '上科大创新创业大赛一等奖（单晶生长项目）' },
-          { t: 2021.55, date: '2021', kind: 'talk', text: '第三届上科大创新创业峰会 · 报告' },
+          { t: 2021.5, date: '2021', kind: 'award', text: '第一届上海科技大学物质学院创新创业大赛一等奖（X 射线探测器项目）' },
+          { t: 2021.55, date: '2021', kind: 'talk', text: '第三届上海科技大学创新创业大赛 · 报告' },
           { t: 2021.67, date: '2021.09', kind: 'milestone', text: '《实验室安全与科研诚信》课程助教' },
+          { t: 2021.9, date: '2021', kind: 'award', text: '研究生学业奖学金' },
           { t: 2022.5, date: '2022', kind: 'paper', text: '发明专利 CN116727668A · 抗菌钛合金（本科阶段工作）' },
+          { t: 2022.9, date: '2022', kind: 'award', text: '研究生学业奖学金' },
+          { t: 2023.9, date: '2023', kind: 'award', text: '研究生学业奖学金' },
           { t: 2024.3, date: '2024', kind: 'paper', text: 'ACS Energy Lett. 2024 · 界面偶极提升锡基电池开压' },
+          { t: 2024.85, date: '2024', kind: 'award', text: '研究生学业奖学金' },
           { t: 2024.9, date: '2024', kind: 'talk', text: 'MRS Fall Meeting（美国波士顿）· Poster' },
           { t: 2025.1, date: '2025', kind: 'paper', text: 'Adv. Sci. 2025 · 锡铅混合钙钛矿取向结晶（第一作者）' },
           { t: 2025.4, date: '2025', kind: 'paper', text: 'ACS AMI 2025 · 锡基电池传输层均匀化（共同一作）' },
@@ -95,10 +104,12 @@ const content = {
         to: 2026.8,
         events: [
           { t: 2025.67, date: '2025.09', kind: 'milestone', text: '加入复旦大学光电研究院，任博士后' },
+          { t: 2025.8, date: '2025', kind: 'milestone', text: '参与国家重点研发计划项目' },
           { t: 2026.2, date: '2026', kind: 'paper', text: 'Adv. Mater. 2026 · 钙硅叠层非晶非对称空穴接触（共同作者）' },
           { t: 2026.45, date: '2026', kind: 'talk', text: '第十九届 SNEC 国际光伏与智慧能源大会 · 上海' },
           { t: 2026.55, date: '2026', kind: 'talk', text: '第十二届钙钛矿材料与器件青年学者论坛 · 青岛' },
           { t: 2026.6, date: '2026', kind: 'milestone', text: '申报第 80 批中国博士后科学基金面上资助' },
+          { t: 2026.65, date: '2026', kind: 'milestone', text: '完成国家重点研发计划项目中期指标' },
         ],
       },
     ] as Phase[],
@@ -127,10 +138,14 @@ const content = {
         from: 2016.67,
         to: 2020.5,
         events: [
-          { t: 2016.67, date: '2016.09', kind: 'milestone', text: 'Entered SUSTech, Department of Materials Science & Engineering' },
+          { t: 2016.67, date: '2016.09', kind: 'milestone', text: 'Joined SUSTech' },
           { t: 2016.8, date: '2016', kind: 'award', text: 'Freshman scholarship' },
+          { t: 2018.92, date: '2018.12', kind: 'award', text: 'Champion, SUSTech College Cup' },
+          { t: 2019.33, date: '2019.05', kind: 'award', text: "Champion, SUSTech President's Cup" },
           { t: 2019.5, date: '2019.07', kind: 'milestone', text: 'Intern at BTR New Material Group: battery-material analysis and SEM imaging' },
-          { t: 2020.5, date: '2020.07', kind: 'milestone', text: 'Graduated; research assistant at the SUSTech humanities center (artifact cataloguing and exhibitions)' },
+          { t: 2019.92, date: '2019.12', kind: 'milestone', text: 'Provincial undergraduate innovation project: antibacterial alloy design & synthesis (project lead)' },
+          { t: 2020.4, date: '2020', kind: 'award', text: 'Outstanding undergraduate thesis, SUSTech' },
+          { t: 2020.5, date: '2020.07', kind: 'milestone', text: 'Graduated; research assistant at the SUSTech humanities center (artifact cataloguing and the “Tao Shuo” pottery exhibition)' },
         ],
       },
       {
@@ -144,12 +159,17 @@ const content = {
         to: 2025.5,
         events: [
           { t: 2020.67, date: '2020.09', kind: 'milestone', text: 'Admitted to ShanghaiTech (direct Ph.D.)' },
+          { t: 2020.9, date: '2020', kind: 'award', text: 'Graduate academic scholarship' },
           { t: 2021.4, date: '2021', kind: 'paper', text: 'Nat. Commun. 2021 · perovskite single crystals (co-author)' },
-          { t: 2021.5, date: '2021', kind: 'award', text: 'First prize, ShanghaiTech Innovation & Entrepreneurship Competition (single crystals)' },
-          { t: 2021.55, date: '2021', kind: 'talk', text: '3rd ShanghaiTech Innovation & Entrepreneurship Summit · talk' },
+          { t: 2021.5, date: '2021', kind: 'award', text: 'First prize, 1st Innovation & Entrepreneurship Competition, SPST, ShanghaiTech (X-ray detector project)' },
+          { t: 2021.55, date: '2021', kind: 'talk', text: '3rd ShanghaiTech Innovation & Entrepreneurship Competition · talk' },
           { t: 2021.67, date: '2021.09', kind: 'milestone', text: 'Teaching assistant, Lab Safety & Research Integrity' },
+          { t: 2021.9, date: '2021', kind: 'award', text: 'Graduate academic scholarship' },
           { t: 2022.5, date: '2022', kind: 'paper', text: 'Patent CN116727668A · antibacterial Ti alloy (undergraduate work)' },
+          { t: 2022.9, date: '2022', kind: 'award', text: 'Graduate academic scholarship' },
+          { t: 2023.9, date: '2023', kind: 'award', text: 'Graduate academic scholarship' },
           { t: 2024.3, date: '2024', kind: 'paper', text: 'ACS Energy Lett. 2024 · interfacial dipoles boost tin-cell voltage' },
+          { t: 2024.85, date: '2024', kind: 'award', text: 'Graduate academic scholarship' },
           { t: 2024.9, date: '2024', kind: 'talk', text: 'MRS Fall Meeting, Boston · poster' },
           { t: 2025.1, date: '2025', kind: 'paper', text: 'Adv. Sci. 2025 · oriented crystallization of Sn–Pb perovskite (first author)' },
           { t: 2025.4, date: '2025', kind: 'paper', text: 'ACS AMI 2025 · homogenized transport layers in tin cells (co-first author)' },
@@ -168,10 +188,12 @@ const content = {
         to: 2026.8,
         events: [
           { t: 2025.67, date: '2025.09', kind: 'milestone', text: 'Joined Fudan Institute of Optoelectronics as postdoc' },
+          { t: 2025.8, date: '2025', kind: 'milestone', text: 'Joined a National Key R&D Program project' },
           { t: 2026.2, date: '2026', kind: 'paper', text: 'Adv. Mater. 2026 · amorphous asymmetric hole contacts for tandems (co-author)' },
           { t: 2026.45, date: '2026', kind: 'talk', text: '19th SNEC PV & Smart Energy Conference · Shanghai' },
           { t: 2026.55, date: '2026', kind: 'talk', text: '12th Young Scholars Forum on Perovskite Materials & Devices · Qingdao' },
           { t: 2026.6, date: '2026', kind: 'milestone', text: 'Applied for the 80th China Postdoctoral Science Foundation general grant' },
+          { t: 2026.65, date: '2026', kind: 'milestone', text: 'Met the mid-term targets of the National Key R&D Program project' },
         ],
       },
     ] as Phase[],
@@ -237,7 +259,7 @@ function Lane({ label, events, kind }: { label: string; events: Event[]; kind: K
       <div className="relative h-7 rounded-md bg-[#f6f8f3]">
         {events.map((e) => (
           <span
-            key={e.text}
+            key={`${e.t}-${e.text}`}
             className="group absolute top-1/2 -translate-x-1/2 -translate-y-1/2"
             style={{ left: `${pct(e.t)}%` }}
           >
