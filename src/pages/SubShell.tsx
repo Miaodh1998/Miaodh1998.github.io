@@ -78,13 +78,32 @@ function PagerLink({ href, hint, title, alignRight }: { href: string; hint: stri
   )
 }
 
-export function PageHeader({ index, kicker, title, lead }: { index: string; kicker: string; title: string; lead: string }) {
+export function PageHeader({
+  index,
+  kicker,
+  title,
+  lead,
+  oneLine,
+}: {
+  index: string
+  kicker: string
+  title: string
+  lead: React.ReactNode
+  oneLine?: boolean
+}) {
   return (
     <header className="mb-16 mt-14">
       <p className="mb-3 font-mono text-xs tracking-widest text-[#6b7a70]">
         {index} / {kicker}
       </p>
-      <h1 className="max-w-3xl text-3xl font-bold leading-tight tracking-tight text-[#14201a] sm:text-[44px] sm:leading-[1.2]">
+      <h1
+        className={
+          'font-bold leading-tight tracking-tight text-[#14201a] ' +
+          (oneLine
+            ? 'whitespace-nowrap text-[length:clamp(14px,4.2vw,40px)]'
+            : 'max-w-3xl text-3xl sm:text-[44px] sm:leading-[1.2]')
+        }
+      >
         {title}
       </h1>
       <p className="mt-6 max-w-2xl text-[15px] leading-8 text-[#3a4a40]">{lead}</p>
