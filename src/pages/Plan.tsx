@@ -5,8 +5,8 @@ type Props = { lang: 'zh' | 'en' }
 const content = {
   zh: {
     kicker: 'Plans',
-    title: '下一站：把实验室里的工艺，带到设备和产线上',
-    lead: '前十年一直在向工程端靠近：从用设备做材料，到搭平台做器件，再到装调设备本身。接下来希望进入半导体设备行业，在量产一线把工艺和设备能力真正落地；同时保持与学术界在叠层光伏和真空薄膜方向的合作。',
+    title: '下一站：把实验室里的工艺，带到半导体行业',
+    lead: '前十年一直在向工程端靠近：从用设备做材料，到搭平台做器件，再到装调设备本身。接下来希望进入半导体行业，设备厂商、晶圆厂与光伏企业都在考虑之列，在量产一线把工艺与设备能力真正落地；同时保持与学术界在叠层光伏和真空薄膜方向的合作。',
     roadLabel: '01 · Roadmap',
     roadTitle: '路线',
     roadDesc: '每一段写清楚要做什么，以及怎样算做到。',
@@ -15,14 +15,14 @@ const content = {
       {
         stage: '现在 · 2025–',
         title: '复旦博后',
-        body: '钙硅叠层与大面积组件研究；参与国家重点实验室大型真空镀膜系统的安装、调试与运维。',
+        body: '钙硅叠层与大面积组件研究，参与复旦、港大、天合光能三方合作的国家重点研发计划项目；参与国家重点实验室大型真空镀膜系统的安装、调试与运维。',
         check: '为转向产业积累设备装调与工艺放大的一手经验',
         now: true,
       },
       {
         stage: '0 – 2 年',
         title: '深入量产一线',
-        body: '加入半导体设备厂商，系统掌握主流设备的工艺整合与 troubleshooting，完成从科研思维到工程思维的转换。',
+        body: '进入半导体行业（设备厂商、晶圆厂或光伏企业），系统掌握主流设备与产线的工艺整合与 troubleshooting，完成从科研思维到工程思维的转换。',
         check: '能独立负责一类设备的工艺调试与问题定位',
       },
       {
@@ -39,8 +39,8 @@ const content = {
       },
     ],
     fitLabel: '02 · Fit',
-    fitTitle: '为什么是设备行业',
-    fitDesc: '设备行业需要同时理解工艺和设备的人，这恰好是我过去十年的交叉点。',
+    fitTitle: '为什么是半导体行业',
+    fitDesc: '无论设备厂、晶圆厂还是光伏产线，都需要同时理解工艺和设备的人，这恰好是我过去十年的交叉点。',
     fit: [
       {
         title: '懂工艺端的真实需求',
@@ -63,7 +63,7 @@ const content = {
     seek: [
       {
         title: '产业岗位',
-        items: ['半导体 / 光伏设备厂商', '工艺工程师 · 设备工程师 · 研发工程师', '薄膜沉积（PVD / ALD / CVD）相关方向优先'],
+        items: ['半导体设备厂商 · 晶圆厂（Fab）· 光伏企业', '工艺工程师 · 工艺整合工程师 · 研发工程师', '薄膜沉积（PVD / ALD / CVD）相关方向优先'],
       },
       {
         title: '学术合作',
@@ -77,8 +77,8 @@ const content = {
   },
   en: {
     kicker: 'Plans',
-    title: 'Next stop: taking lab processes to equipment and the production line',
-    lead: 'The last ten years have steadily moved toward engineering: from using tools on materials, to building platforms for devices, to commissioning the tools themselves. Next, I want to join the semiconductor equipment industry and put process and equipment skills to work in production — while keeping academic collaborations in tandem PV and vacuum thin films.',
+    title: 'Next stop: taking lab processes into the semiconductor industry',
+    lead: 'The last ten years have steadily moved toward engineering: from using tools on materials, to building platforms for devices, to commissioning the tools themselves. Next, I want to join the semiconductor industry — equipment makers, fabs and PV manufacturers are all in scope — and put process and equipment skills to work in production, while keeping academic collaborations in tandem PV and vacuum thin films.',
     roadLabel: '01 · Roadmap',
     roadTitle: 'Roadmap',
     roadDesc: 'For each stage: what to do, and what counts as done.',
@@ -87,14 +87,14 @@ const content = {
       {
         stage: 'Now · 2025–',
         title: 'Postdoc at Fudan',
-        body: 'Perovskite/Si tandems and large-area modules; installing, commissioning and running large vacuum coating systems at a State Key Lab.',
+        body: 'Perovskite/Si tandems and large-area modules within a National Key R&D Program project shared by Fudan, HKU and Trina Solar; installing, commissioning and running large vacuum coating systems at a State Key Lab.',
         check: 'Hands-on commissioning and scale-up experience in place for the move to industry',
         now: true,
       },
       {
         stage: '0 – 2 years',
         title: 'Into the production line',
-        body: 'Join a semiconductor equipment company and master process integration and troubleshooting on mainstream tools — from a research mindset to an engineering one.',
+        body: 'Join the semiconductor industry (equipment maker, fab or PV manufacturer) and master process integration and troubleshooting on mainstream tools and lines — from a research mindset to an engineering one.',
         check: 'Independently own process tuning and root-cause work for one tool class',
       },
       {
@@ -111,8 +111,8 @@ const content = {
       },
     ],
     fitLabel: '02 · Fit',
-    fitTitle: 'Why the equipment industry',
-    fitDesc: 'Equipment makers need people who understand both process and tool — exactly where my last ten years intersect.',
+    fitTitle: 'Why the semiconductor industry',
+    fitDesc: 'Equipment makers, fabs and PV lines all need people who understand both process and tool — exactly where my last ten years intersect.',
     fit: [
       {
         title: 'I know what the process side needs',
@@ -135,7 +135,7 @@ const content = {
     seek: [
       {
         title: 'Industry roles',
-        items: ['Semiconductor / PV equipment companies', 'Process · equipment · R&D engineer', 'Thin-film deposition (PVD / ALD / CVD) preferred'],
+        items: ['Semiconductor equipment makers · fabs · PV manufacturers', 'Process · process integration · R&D engineer', 'Thin-film deposition (PVD / ALD / CVD) preferred'],
       },
       {
         title: 'Academic collaboration',
