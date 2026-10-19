@@ -67,32 +67,27 @@ export default function Home() {
       {subPage ? (
         <main className="mx-auto max-w-5xl px-6">{subPage}</main>
       ) : lang === 'zh' ? (
-        <>
-          <main className="mx-auto max-w-5xl px-6">
-            <Hero />
-            <Focus />
-            <Experience />
-            <Research />
-            <Publications />
-            <Skills />
-            <Hobbies />
-          </main>
-          <Footer />
-        </>
+        <main className="mx-auto max-w-5xl px-6">
+          <Hero />
+          <Focus />
+          <Experience />
+          <Research />
+          <Publications />
+          <Skills />
+          <Hobbies />
+        </main>
       ) : (
-        <>
-          <main className="mx-auto max-w-5xl px-6">
-            <HeroEn />
-            <FocusEn />
-            <ExperienceEn />
-            <ResearchEn />
-            <PublicationsEn />
-            <SkillsEn />
-            <HobbiesEn />
-          </main>
-          <FooterEn />
-        </>
+        <main className="mx-auto max-w-5xl px-6">
+          <HeroEn />
+          <FocusEn />
+          <ExperienceEn />
+          <ResearchEn />
+          <PublicationsEn />
+          <SkillsEn />
+          <HobbiesEn />
+        </main>
       )}
+      {lang === 'zh' ? <Footer /> : <FooterEn />}
     </div>
   )
 }
