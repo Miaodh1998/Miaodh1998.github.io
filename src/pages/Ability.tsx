@@ -15,6 +15,7 @@ type Case = {
 type Level = 0 | 1 | 2
 
 const levels: Level[][] = [
+  [2, 2, 2, 2, 1], // 提出想法
   [2, 2, 0, 1, 0], // 真空设备装调与维护
   [2, 2, 2, 0, 0], // 薄膜沉积工艺
   [2, 1, 1, 2, 2], // 材料设计与合成
@@ -29,17 +30,18 @@ const content = {
   zh: {
     kicker: 'Capabilities',
     title: '每一项能力，都落在具体项目里',
-    lead: '科研训练留下的不是一张技能清单，而是一个反复运转的闭环：把设备装好、把工艺跑通、用表征找到问题，再回到设备和工艺上迭代。下面是这个闭环，以及它在五个项目里的落点。',
+    lead: '科研训练留下的不是一张技能清单，而是一个反复运转的闭环：从想法出发，把设备装好、把工艺跑通、用表征找到问题，再回到设备和工艺上迭代。下面是这个闭环，以及它在五个项目里的落点。',
     loopLabel: '01 · Loop',
     loopTitle: '一个闭环',
-    loopDesc: '四个环节不是分工，而是同一个人要连续做完的事。',
+    loopDesc: '五个环节不是分工，而是同一个人要连续做完的事。',
     loop: [
+      { verb: '想法', en: 'Idea', body: '发现问题，聚焦问题核心，提出解决问题的方案，再使用设备把想法变成现实。' },
       { verb: '装调', en: 'Commission', body: '磁控溅射、ALD、气相沉积等真空镀膜系统的安装、调试与运维；真空、气路、电源与控制系统排障。' },
       { verb: '工艺', en: 'Process', body: '旋涂、气萃、闪蒸、刮涂到真空沉积的完整工艺链；从小面积器件到 200 cm² 以上组件摸索工艺窗口。' },
       { verb: '表征', en: 'Characterize', body: 'SEM、XRD 家族、PL / EQE Mapping、J-V 等手段，从数据反推结晶、界面与均匀性问题。' },
       { verb: '迭代', en: 'Iterate', body: '把表征结论转成工艺与设备参数的调整，沉淀为可复现的 SOP。' },
     ],
-    loopBack: '表征结论回到下一轮装调与工艺',
+    loopBack: '迭代的结论，催生下一个想法',
     matrixLabel: '02 · Evidence',
     matrixTitle: '能力 × 项目',
     matrixDesc: '每一行是一项能力，每一列是一个做过的项目。实心表示主导或主要负责，空心表示参与。',
@@ -52,6 +54,7 @@ const content = {
       { name: '抗菌钛合金', sub: '本科' },
     ],
     rows: [
+      '提出想法',
       '真空设备装调与维护',
       '薄膜沉积工艺',
       '材料设计与合成',
@@ -122,17 +125,18 @@ const content = {
   en: {
     kicker: 'Capabilities',
     title: 'Every capability maps to a real project',
-    lead: 'Research left me with a loop rather than a checklist: get the tool running, get the process working, find the problem through characterization, then iterate on the tool and the process. Below is that loop, and where it shows up across five projects.',
+    lead: 'Research left me with a loop rather than a checklist: start from an idea, get the tool running, get the process working, find the problem through characterization, then iterate on the tool and the process. Below is that loop, and where it shows up across five projects.',
     loopLabel: '01 · Loop',
     loopTitle: 'One closed loop',
-    loopDesc: 'Not four separate jobs — four steps one person carries through end to end.',
+    loopDesc: 'Not five separate jobs — five steps one person carries through end to end.',
     loop: [
+      { verb: 'Idea', en: '想法', body: 'Spot the problem, zero in on its core, propose a solution, then use the tools to make the idea real.' },
       { verb: 'Commission', en: '装调', body: 'Install, commission and maintain vacuum coating systems (sputtering, ALD, vapor deposition); troubleshoot vacuum, gas, power and control.' },
       { verb: 'Process', en: '工艺', body: 'Full chain from spin-coating, gas quenching, flash evaporation and blade-coating to vacuum deposition; process windows from small cells to >200 cm² modules.' },
       { verb: 'Characterize', en: '表征', body: 'SEM, XRD family, PL / EQE mapping and J-V to trace crystallization, interface and uniformity issues back to their cause.' },
       { verb: 'Iterate', en: '迭代', body: 'Turn findings into process and tool-parameter changes, and capture them as reproducible SOPs.' },
     ],
-    loopBack: 'Findings feed the next round of commissioning and process',
+    loopBack: 'What iteration teaches sparks the next idea',
     matrixLabel: '02 · Evidence',
     matrixTitle: 'Capabilities × Projects',
     matrixDesc: 'Rows are capabilities, columns are projects. Filled = led or main owner; hollow = contributed.',
@@ -145,6 +149,7 @@ const content = {
       { name: 'Antibacterial Ti alloy', sub: 'B.Sc.' },
     ],
     rows: [
+      'Proposing ideas',
       'Vacuum tool commissioning',
       'Thin-film deposition',
       'Materials design & synthesis',
@@ -227,7 +232,7 @@ export default function Ability({ lang }: Props) {
       <PageHeader index="01" kicker={c.kicker} title={c.title} lead={c.lead} />
 
       <Block label={c.loopLabel} title={c.loopTitle} desc={c.loopDesc}>
-        <ol className="grid grid-cols-1 gap-3 sm:grid-cols-4">
+        <ol className="grid grid-cols-1 gap-3 sm:grid-cols-5">
           {c.loop.map((s, i) => (
             <li key={s.verb} className="relative rounded-xl border border-[#e3e6e0] bg-white p-5">
               <p className="font-mono text-[11px] text-[#9aa89e]">0{i + 1}</p>
@@ -242,7 +247,7 @@ export default function Ability({ lang }: Props) {
             </li>
           ))}
         </ol>
-        <div className="mx-[12.5%] hidden h-7 rounded-b-2xl border-x-2 border-b-2 border-dashed border-[#b9cbb9] sm:block" />
+        <div className="mx-[10%] hidden h-7 rounded-b-2xl border-x-2 border-b-2 border-dashed border-[#b9cbb9] sm:block" />
         <p className="mt-3 text-center text-xs text-[#6b7a70]">↺ {c.loopBack}</p>
       </Block>
 
