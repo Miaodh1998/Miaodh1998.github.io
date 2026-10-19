@@ -15,14 +15,14 @@ type Case = {
 type Level = 0 | 1 | 2
 
 const levels: Level[][] = [
-  [2, 0, 0, 1, 0], // 真空设备装调与维护
+  [2, 2, 0, 1, 0], // 真空设备装调与维护
   [2, 2, 2, 0, 0], // 薄膜沉积工艺
   [2, 1, 1, 2, 2], // 材料设计与合成
   [1, 2, 2, 0, 0], // 界面与能级调控
-  [2, 0, 1, 0, 0], // 大面积与工艺放大
+  [2, 2, 1, 0, 0], // 大面积与工艺放大
   [2, 1, 0, 0, 0], // 稳定性与可靠性
   [2, 2, 2, 2, 1], // 表征与问题定位
-  [2, 0, 0, 0, 0], // 团队与项目管理
+  [2, 2, 0, 0, 0], // 团队与项目管理
 ]
 
 const content = {
@@ -77,7 +77,7 @@ const content = {
         action: '设计开发多种纯碘宽带隙钙钛矿材料，配合绿色反溶剂制备工艺，从源头上去掉溴。',
         results: [
           { num: '22.7%', label: '1 cm² 半透明单结认证' },
-          { num: '34%', label: '钙钛矿-晶硅叠层认证' },
+          { num: '32%', label: '钙钛矿-晶硅叠层认证' },
         ],
       },
       {
@@ -170,7 +170,7 @@ const content = {
         action: 'Designed several pure-iodide wide-bandgap perovskites with a green antisolvent process, removing bromine at the source.',
         results: [
           { num: '22.7%', label: 'certified 1 cm² semi-transparent cell' },
-          { num: '34%', label: 'certified perovskite/Si tandem' },
+          { num: '32%', label: 'certified perovskite/Si tandem' },
         ],
       },
       {
