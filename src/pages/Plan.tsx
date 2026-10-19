@@ -6,7 +6,16 @@ const content = {
   zh: {
     kicker: 'Plans',
     title: '下一站：把实验室里的工艺，带到半导体行业',
-    lead: '前十年一直在向工程端靠近：从用设备做材料，到搭平台做器件，再到装调设备本身。接下来希望进入半导体行业，设备厂商、晶圆厂与光伏企业都在考虑之列，在量产一线把工艺与设备能力真正落地；同时保持与学术界在叠层光伏和真空薄膜方向的合作。',
+    lead: (
+      <>
+        前十年一直在向工程端靠近：从用设备做材料，到搭平台做器件，再到聚焦设备工艺提升性能。接下来希望进入
+        <strong className="font-extrabold text-[#14201a]">半导体行业</strong>，
+        <strong className="font-semibold text-[#14201a]">设备厂商</strong>、
+        <strong className="font-semibold text-[#14201a]">晶圆厂</strong>与
+        <strong className="font-semibold text-[#14201a]">光伏企业</strong>
+        都在考虑之列，在量产一线把工艺与设备能力真正落地；同时保持与学术界在叠层光伏和真空薄膜方向的合作。
+      </>
+    ),
     roadLabel: '01 · Roadmap',
     roadTitle: '路线',
     roadDesc: '每一段写清楚要做什么，以及怎样算做到。',
@@ -49,7 +58,7 @@ const content = {
       },
       {
         title: '熟悉设备端的运行逻辑',
-        body: '参与磁控溅射、ALD、气相沉积系统的安装、调试与运维，处理过真空、气路、电源与控制系统的故障。',
+        body: '参与 CVD、ALD、PVD 系统的安装、调试与运维，处理过真空、气路、电源与控制系统的故障。',
         link: { label: '看能力矩阵', href: '#/ability' },
       },
       {
@@ -78,7 +87,17 @@ const content = {
   en: {
     kicker: 'Plans',
     title: 'Next stop: taking lab processes into the semiconductor industry',
-    lead: 'The last ten years have steadily moved toward engineering: from using tools on materials, to building platforms for devices, to commissioning the tools themselves. Next, I want to join the semiconductor industry — equipment makers, fabs and PV manufacturers are all in scope — and put process and equipment skills to work in production, while keeping academic collaborations in tandem PV and vacuum thin films.',
+    lead: (
+      <>
+        The last ten years have steadily moved toward engineering: from using tools on materials, to building platforms
+        for devices, to focusing on equipment processes that push performance. Next, I want to join the{' '}
+        <strong className="font-extrabold text-[#14201a]">semiconductor industry</strong> —{' '}
+        <strong className="font-semibold text-[#14201a]">equipment makers</strong>,{' '}
+        <strong className="font-semibold text-[#14201a]">fabs</strong> and{' '}
+        <strong className="font-semibold text-[#14201a]">PV manufacturers</strong> are all in scope — and put process and
+        equipment skills to work in production, while keeping academic collaborations in tandem PV and vacuum thin films.
+      </>
+    ),
     roadLabel: '01 · Roadmap',
     roadTitle: 'Roadmap',
     roadDesc: 'For each stage: what to do, and what counts as done.',
@@ -121,7 +140,7 @@ const content = {
       },
       {
         title: 'I know how the tools behave',
-        body: 'Installed, commissioned and maintained sputtering, ALD and vapor-deposition systems; handled vacuum, gas, power and control faults.',
+        body: 'Installed, commissioned and maintained CVD, ALD and PVD systems; handled vacuum, gas, power and control faults.',
         link: { label: 'See matrix', href: '#/ability' },
       },
       {
@@ -153,7 +172,7 @@ export default function Plan({ lang }: Props) {
   const c = content[lang]
   return (
     <SubShell lang={lang} current="plan">
-      <PageHeader index="03" kicker={c.kicker} title={c.title} lead={c.lead} />
+      <PageHeader index="03" kicker={c.kicker} title={c.title} lead={c.lead} oneLine={lang === 'zh'} />
 
       <Block label={c.roadLabel} title={c.roadTitle} desc={c.roadDesc}>
         <ol className="relative grid gap-8 sm:grid-cols-4 sm:gap-5">
