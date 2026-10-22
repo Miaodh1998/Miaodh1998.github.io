@@ -23,8 +23,7 @@ export default function HeroEn() {
             B.Sc. from SUSTech and my Ph.D. from ShanghaiTech University. My research spans perovskite materials
             and photovoltaic devices, from materials synthesis and single-crystal growth to device fabrication.
             Highlights include certified 34% perovskite–silicon tandem, 22.7% 1 cm² semi-transparent wide-bandgap,
-            16% tin-based perovskite cells (a world record at the time), and &gt;200 cm² large-area tandem
-            modules with certified 29% efficiency. I also develop and iterate AI tools, and enjoy leveraging
+            and 16% tin-based perovskite cells (a world record at the time). I also develop and iterate AI tools, and enjoy leveraging
             AI and big-data analysis to streamline workflows and improve efficiency.
           </p>
         </div>
