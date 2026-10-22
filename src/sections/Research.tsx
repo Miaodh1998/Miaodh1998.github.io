@@ -1,6 +1,7 @@
 import { SectionHeading, AccentBadge } from './Shared'
 import img165 from '@/assets/1.65.png'
 import img3T from '@/assets/3T.png'
+import imgAldQcm from '@/assets/ALD-QCM.webp'
 import imgFPEABr from '@/assets/FPEABr.png'
 import imgPMMA from '@/assets/PMMA.png'
 import imgSC from '@/assets/SC.png'
@@ -28,9 +29,10 @@ const projects = [
     org: '上海科技大学 · 物质科学与技术学院',
     links: [{ label: '3T添加剂', href: 'papers/as-2025.pdf' }],
     body: [
-      '通过对锡铅混合器件及宽带隙上下界面的综合调控，系统性提升锡铅混合钙钛矿和宽带隙碘溴钙钛矿的抗氧化能力与器件效率，达国际领先水平。',
+      '添加剂工程提升薄膜结晶能力：通过对锡铅混合器件及宽带隙上下界面的综合调控，系统性提升锡铅混合钙钛矿和宽带隙碘溴钙钛矿的抗氧化能力与器件效率，达国际领先水平。',
+      'ALD 与 QCM 联用探测纳米尺度薄膜沉积：在原子层沉积（ALD）腔室中引入石英晶体微天平（QCM），以频率（Hz）信号实时记录气体吸附与反应带来的质量变化，在纳米尺度上验证每个循环的薄膜生长；据此系统表征氧气与钙钛矿层的反应机理，定向生成 SnO₂ 界面层，进一步提升器件效率。',
     ],
-    img: img3T,
+    imgStack: [img3T, imgAldQcm],
     metrics: [
       { num: '23%', label: '锡铅混合钙钛矿认证效率' },
       { num: '29%', label: '全钙钛矿叠层认证效率' },
@@ -108,6 +110,13 @@ export default function Research() {
             </ul>
             {'img' in p && p.img && (
               <img src={p.img} alt="" className="mx-auto mt-5 w-[400px] max-w-full" />
+            )}
+            {'imgStack' in p && p.imgStack && (
+              <div className="mt-5 flex flex-col items-center gap-4">
+                {p.imgStack.map((src) => (
+                  <img key={src} src={src} alt="" className="h-auto max-h-[140px] w-auto max-w-full" />
+                ))}
+              </div>
             )}
             {'imgPair' in p && p.imgPair && (
               <div className="mt-5 flex items-center justify-center gap-6">
