@@ -63,7 +63,7 @@ const content = {
       },
       {
         title: '有从小样到大面积的放大经验',
-        body: '参与 >200 cm² 钙硅叠层组件开发，负责结晶调控与工艺窗口，组件认证效率 29%。',
+        body: '参与 >200 cm² 钙硅叠层组件开发，负责结晶调控与工艺窗口，组件效率 27%。',
         link: { label: '看时间线', href: '#/timeline' },
       },
     ],
@@ -145,7 +145,7 @@ const content = {
       },
       {
         title: 'I have scaled from coupon to module',
-        body: 'Contributed to >200 cm² perovskite/Si tandem modules, owning crystallization control and the process window; certified at 29%.',
+        body: 'Contributed to >200 cm² perovskite/Si tandem modules, owning crystallization control and the process window; module efficiency 27%.',
         link: { label: 'See timeline', href: '#/timeline' },
       },
     ],
