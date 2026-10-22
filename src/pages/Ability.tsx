@@ -89,7 +89,7 @@ const content = {
         problem: '面向空天光伏的叠层组件，需要在大面积上保持均匀结晶，并承受高温、高辐照下的长期运行。',
         action: '在复旦、港大、天合光能合作的国家重点研发计划项目中，负责结晶调控与工艺窗口部分。',
         results: [
-          { num: '29%', label: '>200 cm² 组件认证' },
+          { num: '27%', label: '>200 cm² 组件' },
           { num: '1000 h', label: '85 ℃ 光照 / 双 85，效率损失 ≤10%' },
         ],
       },
@@ -184,7 +184,7 @@ const content = {
         problem: 'Tandem modules for space PV must crystallize uniformly over large areas and survive long operation under heat and high irradiance.',
         action: 'In a national key R&D project with Fudan, HKU and Trina Solar, I owned crystallization control and the process window.',
         results: [
-          { num: '29%', label: 'certified >200 cm² module' },
+          { num: '27%', label: '>200 cm² module' },
           { num: '1000 h', label: '85 °C light / damp-heat, ≤10% loss' },
         ],
       },
