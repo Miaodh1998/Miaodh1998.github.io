@@ -99,7 +99,7 @@ const content = {
         role: '博士后',
         short: '复旦 · 博后',
         theme: '走向设备：钙硅叠层与大面积组件，参与国家重点实验室大型真空镀膜系统的装调与运维。',
-        highlights: ['钙硅叠层 34% 认证', '>200 cm² 组件 29% 认证', '子项目组长 · 4 人团队'],
+        highlights: ['钙硅叠层 34% 认证', '>200 cm² 组件 27%', '子项目组长 · 4 人团队'],
         from: 2025.67,
         to: 2026.8,
         events: [
@@ -183,7 +183,7 @@ const content = {
         role: 'Postdoc',
         short: 'Fudan · Postdoc',
         theme: 'Toward equipment: perovskite/Si tandems and large-area modules; commissioning and running large vacuum coating systems at a State Key Lab.',
-        highlights: ['34% certified perovskite/Si tandem', '29% certified >200 cm² module', 'Subgroup lead · team of 4'],
+        highlights: ['34% certified perovskite/Si tandem', '27% >200 cm² module', 'Subgroup lead · team of 4'],
         from: 2025.67,
         to: 2026.8,
         events: [
