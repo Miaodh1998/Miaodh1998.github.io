@@ -1,6 +1,7 @@
 import { SectionHeading, AccentBadge } from '../Shared'
 import img165 from '@/assets/1.65.png'
 import img3T from '@/assets/3T.png'
+import imgAldQcm from '@/assets/ALD-QCM.webp'
 import imgFPEABr from '@/assets/FPEABr.png'
 import imgPMMA from '@/assets/PMMA.png'
 import imgSC from '@/assets/SC.png'
@@ -28,9 +29,10 @@ const projects = [
     org: 'ShanghaiTech University · School of Physical Science and Technology',
     links: [{ label: '3T additive', href: 'papers/as-2025.pdf' }],
     body: [
-      'Comprehensive interface engineering of Sn–Pb and wide-bandgap subcells systematically improved the oxidation resistance and efficiency of Sn–Pb mixed and wide-bandgap I–Br perovskites, reaching world-leading levels.',
+      'Additive engineering for better film crystallization: comprehensive interface engineering of Sn–Pb and wide-bandgap subcells systematically improved the oxidation resistance and efficiency of Sn–Pb mixed and wide-bandgap I–Br perovskites, reaching world-leading levels.',
+      'In-situ ALD–QCM probing of nanoscale film deposition: a quartz crystal microbalance (QCM) inside the atomic layer deposition (ALD) chamber records, as a frequency (Hz) signal, the mass change from gas adsorption and reaction, verifying film growth cycle by cycle at the nanoscale; this was used to map how oxygen reacts with the perovskite layer and to grow a targeted SnO₂ interlayer that further raised device efficiency.',
     ],
-    img: img3T,
+    imgStack: [img3T, imgAldQcm],
     metrics: [
       { num: '23%', label: 'Certified Sn–Pb perovskite efficiency' },
       { num: '29%', label: 'Certified all-perovskite tandem efficiency' },
@@ -108,6 +110,13 @@ export default function ResearchEn() {
             </ul>
             {'img' in p && p.img && (
               <img src={p.img} alt="" className="mx-auto mt-5 w-[400px] max-w-full" />
+            )}
+            {'imgStack' in p && p.imgStack && (
+              <div className="mt-5 flex flex-col items-center gap-4">
+                {p.imgStack.map((src) => (
+                  <img key={src} src={src} alt="" className="h-auto max-h-[140px] w-auto max-w-full" />
+                ))}
+              </div>
             )}
             {'imgPair' in p && p.imgPair && (
               <div className="mt-5 flex items-center justify-center gap-6">
