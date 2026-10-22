@@ -20,7 +20,7 @@ const projects = [
     metrics: [
       { num: '22.7%', label: '1 cm² semi-transparent single junction (certified by SIMIT, CAS)' },
       { num: '34%', label: 'Perovskite–Si tandem (certified by SIMIT, CAS)' },
-      { num: '29%', label: 'Certified efficiency of a >200 cm² module' },
+      { num: '27%', label: 'Efficiency of a >200 cm² module' },
       { num: '1000 h', label: '85 °C illumination / damp-heat aging, ≤10% loss' },
     ],
   },
