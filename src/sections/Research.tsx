@@ -64,6 +64,7 @@ const projects = [
       '使用自制密封玻璃/石英管真空封管合成高质量材料（SnI₂、PbI₂ 及掺杂半导体），通过化学合成制备钙钛矿原材料与空穴传输层材料（FAI、NiOx 等），以区域熔融法提纯、布里奇曼法生长 SnPbI₄、CsPbBr₃ 等单晶。',
     ],
     img: imgSC,
+    imgH: '180px',
     metrics: [{ num: '一等奖', label: '2021 上海科技大学创新创意大赛' }],
   },
   {
@@ -112,7 +113,12 @@ export default function Research() {
               ))}
             </ul>
             {'img' in p && p.img && (
-              <img src={p.img} alt="" className="mx-auto mt-5 h-[240px] w-auto max-w-full" />
+              <img
+                src={p.img}
+                alt=""
+                className="mx-auto mt-5 w-auto max-w-full"
+                style={{ height: ('imgH' in p && p.imgH) || '240px' }}
+              />
             )}
             {'imgStack' in p && p.imgStack && (
               <div className="mt-5 flex flex-col items-center gap-4">

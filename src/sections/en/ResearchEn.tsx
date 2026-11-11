@@ -64,6 +64,7 @@ const projects = [
       'Synthesized high-quality materials (SnI2, PbI2, and doped semiconductors) in home-made vacuum-sealed glass/quartz ampoules; prepared perovskite precursors and hole-transport materials (FAI, NiOx) by chemical synthesis; purified raw materials by zone refining and grew SnPbI4, CsPbBr3 and other single crystals by the Bridgman method.',
     ],
     img: imgSC,
+    imgH: '180px',
     metrics: [{ num: '1st Prize', label: '2021 ShanghaiTech Innovation Competition' }],
   },
   {
@@ -112,7 +113,12 @@ export default function ResearchEn() {
               ))}
             </ul>
             {'img' in p && p.img && (
-              <img src={p.img} alt="" className="mx-auto mt-5 h-[240px] w-auto max-w-full" />
+              <img
+                src={p.img}
+                alt=""
+                className="mx-auto mt-5 w-auto max-w-full"
+                style={{ height: ('imgH' in p && p.imgH) || '240px' }}
+              />
             )}
             {'imgStack' in p && p.imgStack && (
               <div className="mt-5 flex flex-col items-center gap-4">
