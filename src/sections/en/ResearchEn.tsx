@@ -5,6 +5,8 @@ import imgAldQcm from '@/assets/ALD-QCM.webp'
 import imgFPEABr from '@/assets/FPEABr.png'
 import imgPMMA from '@/assets/PMMA.png'
 import imgSC from '@/assets/SC.png'
+import imgPlqy from '@/assets/plqy.png'
+import imgTandem from '@/assets/tandem-structure.png'
 
 const projects = [
   {
@@ -17,10 +19,11 @@ const projects = [
       'Large-area perovskite–Si tandems: contributed to a National Key R&D Program jointly with Fudan University, the University of Hong Kong, and Trina Solar, developing large-area modules for space photovoltaics.',
     ],
     img: img165,
+    imgPair: [imgPlqy, imgTandem],
     metrics: [
       { num: '22.7%', label: '1 cm² semi-transparent single junction (certified by SIMIT, CAS)' },
       { num: '34%', label: 'Perovskite–Si tandem (certified by SIMIT, CAS)' },
-      { num: '27%', label: 'Efficiency of a >200 cm² module' },
+      { num: '29%', label: 'Certified efficiency of a >200 cm² module' },
       { num: '1000 h', label: '85 °C illumination / damp-heat aging, ≤10% loss' },
     ],
   },
@@ -109,19 +112,19 @@ export default function ResearchEn() {
               ))}
             </ul>
             {'img' in p && p.img && (
-              <img src={p.img} alt="" className="mx-auto mt-5 w-[400px] max-w-full" />
+              <img src={p.img} alt="" className="mx-auto mt-5 h-[240px] w-auto max-w-full" />
             )}
             {'imgStack' in p && p.imgStack && (
               <div className="mt-5 flex flex-col items-center gap-4">
                 {p.imgStack.map((src) => (
-                  <img key={src} src={src} alt="" className="h-auto max-h-[140px] w-auto max-w-full" />
+                  <img key={src} src={src} alt="" className="h-[240px] w-auto max-w-full" />
                 ))}
               </div>
             )}
             {'imgPair' in p && p.imgPair && (
               <div className="mt-5 flex items-center justify-center gap-6">
                 {p.imgPair.map((src) => (
-                  <img key={src} src={src} alt="" className="h-[146px] w-auto" />
+                  <img key={src} src={src} alt="" className="h-[240px] w-auto max-w-full" />
                 ))}
               </div>
             )}

@@ -5,6 +5,8 @@ import imgAldQcm from '@/assets/ALD-QCM.webp'
 import imgFPEABr from '@/assets/FPEABr.png'
 import imgPMMA from '@/assets/PMMA.png'
 import imgSC from '@/assets/SC.png'
+import imgPlqy from '@/assets/plqy.png'
+import imgTandem from '@/assets/tandem-structure.png'
 
 const projects = [
   {
@@ -17,10 +19,11 @@ const projects = [
       '高效稳定大面积钙硅叠层：协同复旦大学、香港大学、天合光能合作国家重点研发计划项目，开发适配空天光伏的大面积组件。',
     ],
     img: img165,
+    imgPair: [imgPlqy, imgTandem],
     metrics: [
       { num: '22.7%', label: '1 cm² 半透明单结（中科院微系统所认证）' },
       { num: '34%', label: '钙钛矿-晶硅叠层（中科院微系统所认证）' },
-      { num: '27%', label: '>200 cm² 大面积组件效率' },
+      { num: '29%', label: '>200 cm² 大面积组件认证效率' },
       { num: '1000 h', label: '85 ℃ 光照 / 双 85 老化，效率损失 ≤10%' },
     ],
   },
@@ -109,19 +112,19 @@ export default function Research() {
               ))}
             </ul>
             {'img' in p && p.img && (
-              <img src={p.img} alt="" className="mx-auto mt-5 w-[400px] max-w-full" />
+              <img src={p.img} alt="" className="mx-auto mt-5 h-[240px] w-auto max-w-full" />
             )}
             {'imgStack' in p && p.imgStack && (
               <div className="mt-5 flex flex-col items-center gap-4">
                 {p.imgStack.map((src) => (
-                  <img key={src} src={src} alt="" className="h-auto max-h-[140px] w-auto max-w-full" />
+                  <img key={src} src={src} alt="" className="h-[240px] w-auto max-w-full" />
                 ))}
               </div>
             )}
             {'imgPair' in p && p.imgPair && (
               <div className="mt-5 flex items-center justify-center gap-6">
                 {p.imgPair.map((src) => (
-                  <img key={src} src={src} alt="" className="h-[146px] w-auto" />
+                  <img key={src} src={src} alt="" className="h-[240px] w-auto max-w-full" />
                 ))}
               </div>
             )}
